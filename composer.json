@@ -1,0 +1,41 @@
+{
+  "name": "minionfactory/laravel-module-extras",
+  "description": "Extension to nwidart/laravel-modules to add other registrations such as event listeners, policies and shortcodes. ",
+  "type": "package",
+  "keywords": [
+    "laravel",
+    "modules",
+    "extras",
+    "minionfactory"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paul Warren",
+      "email": "paul@paulwarren.ca",
+      "role": "Developer",
+      "homepage": "https://paulwarren.ca"
+    }
+  ],
+  "require": {
+    "php": ">=7.3"
+  },
+  "require-dev": {
+    "laravel/framework": "^8.0",
+    "nwidart/laravel-modules": "v8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "MinionFactory\\LaravelModuleExtras\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MinionFactory\\LaravelModuleExtras\\ModuleServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
